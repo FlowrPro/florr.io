@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Canvas</title>
+<style>
+  body { margin: 0; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas"></canvas>
+
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Set the width and height of the canvas
+  canvas.width = 400;
+  canvas.height = 200;
+
+  // You can now use the 'ctx' object to draw on the canvas
+  // For example, to draw a red rectangle:
+  ctx.fillStyle = 'red';
+  ctx.fillRect(50, 50, 100, 75);
+</script>
+
+</body>
+</html>
